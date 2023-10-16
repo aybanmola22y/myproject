@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+        }
+
+        .pictures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .picture {
+            flex: 0 0 30%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .profile-nav {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .profile-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            background-color: #333;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+           
+        }
+
+        .profile-nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+
+    <section class="profile-info">
+        <p><strong>Name:</strong> John Aivanne Molato</p>
+        <p><strong>Course:</strong> BS Information Technology</p>
+        <p><strong>BLOCK:</strong> 3</p>
+    </section>
+
+    <div class="pictures">
+        <div class="picture">
+            <img src="./profile.jpg" alt="Profile Picture">
+            <p>Profile</p>
+        </div>
+        <div class="picture">
+            <img src="./gallerylogo1.jpg" alt="Gallery Picture">
+            <p>Gallery</p>
+        </div>
+        <div class="picture">
+            <img src="./post.jpg.png" alt="Posts Picture">
+            <p>Posts</p>
+        </div>
+    </div>
+
+    <div class="profile-nav">
+        <a href="profile.html">Profile</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="posts.html">Posts</a>
+    </div>
+
+</body>
+</html>
